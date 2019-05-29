@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<title>table&ul</title>
+	</head>
+	<body>
+<!--
+表格:
+	table标签:定义表格整体
+	caption标签:插入表格名
+	tr:定义行
+	td:定义列
+	th:用来定义字段的
+	
+th和td中的属性:
+	colspan:横跨几个单元格组成一个新单元格
+	rowspan:竖跨几个单元格组成一个新单元格
+	<td colspan=2>春暖花开</td>
+
+table的属性:
+border:表格整体外边框的宽度.
+cellpadding:单元格内边距
+cellspacing:单元格外边距
+
+
+-->
+	<table border='10px' cellpadding='20px' cellspacing='10px'>
+		<caption>表格1:</caption>
+		<tr>
+			<th>姓名</th>
+			<th>年龄</th>
+			<th>性别</th>
+		</tr>
+		<tr>
+			<td>张三</td>
+			<td>18</td>
+			<td>男</td>
+		</tr>
+		<tr>
+			<td>李四</td>
+			<td>18</td>
+			<td>男</td>
+		</tr>
+		<tr>
+			<td>如花</td>
+			<td></td>
+			<td>女</td>
+		</tr>
+		<tr>
+			<td colspan=2>春暖花开</td>
+			<td rowspan=2></td>
+		</tr>
+		<tr>
+			<td>如花</td>
+			<td></td>
+		</tr>
+	</table>
+	
+	
+	
+	<hr/>
+	
+	
+	<table border='5px'>
+		<caption>表格2:</caption>
+		<tr>
+			<th>姓名</th>
+			<td>张三</td>
+			<td>李四</td>
+			<td>如花</td>
+			
+			
+		</tr>
+		<tr>
+			<th>年龄</th>
+			<td>18</td>
+			<td>18</td>
+			<td>17</td>
+			
+			
+		</tr>
+		<tr>
+			<th>性别</th>
+			<td>男</td>
+			<td>男</td>
+			<td>女</td>
+		</tr>
+	</table>
+	
+<!--
+无序列表:ul  li
+有序列表:ol  li 
+
+-->
+		<style type='text/css'>
+			li{
+				list-style:none;
+				
+			}
+		</style>
+		<ul>
+			<li>无序列表1</li>
+			<li>无序列表2</li>
+		</ul>
+		
+		<ol list-style='circle'>
+			<li>有序列表1</li>
+			<li>有序列表2</li>
+		</ol>
+	</body>
+</html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<!--
+html标签定义整个网页文档
+head标签直接的内容描述网页的元信息
+body标签之间的文本是可见的页面内容
+-->
+<html>
+	<head>
+		<title>HTML测试</title>
+		<meta charset='utf-8'/>
+	</head>
+	<body>
+		<!--标题标签h1~h6-->
+		<h1 title='h1标题'>这是一个标题</h1>
+		
+		<!--HTML 段落
+			HTML 段落是通过 <p> 标签进行定义的。
+		-->
+		<p title="段落标签">段落p标签效果</p>
+		
+		<!--超链接标签:
+			href属性:跳转到哪里
+			target属性:跳转超链接后打开方式
+			name属性:锚点,可以用id代替.
+		-->
+		<a href="#h1" title="这是一个超链接标签">超链接a标签定义</a>
+		
+		<hr/>
+		
+		<!--图片标签
+			src属性:图片引用位置
+			alt属性:预备可替换文本(图片无法显示时,显示的文本)
+			
+		-->
+		<img src="./test.jpg" title="这是一个图片标签"/>
+		<hr>
+		
+		
+<!--适合打多数标签的属性:
+	属性		值				说明
+	class	classname			规定元素的类名（classname）
+	id		id					规定元素的唯一 id
+	style	style_definition	规定元素的行内样式（inline style）
+	title	text				规定元素的额外信息（可在工具提示中显示）
+	
+说明:1. id,name 可以用于css设置样式,还可以作为a标签href属性跳转的锚点.
+	2. 关于class:class值是没有空格的任何值,一个元素可以有多个class,用空格隔开.
+	      如:<div class="box1 aa cc"></div>
+	      相同class可以赋值给多个元素.
+	3.
+-->		
+	
+	<em title>html中style标签测试:</em><br>
+	<!--注意style属性书写方式-->
+	<a href='./test.jpg' style="color:pink;font-size:40px">跳转到图片</a>
+	</body>
+	
+<!--关于格式化标签:
+	浏览器对格式化标签实现不一致,表现形式不一致
+	为了保证兼容性,尽量少用格式化标签.
+-->
+
+
+<!--IE中的条件注释-->
+<!--[if IE 8]>
+    .... some HTML here ....
+<![endif]-->
+
+<!--html中外联样式的引用
+说明:
+	link中rel 属性规定当前文档与被链接文档之间的关系。
+	rel值中,stylesheet表示文档的外部样式表,只有这一个值得到了所有浏览器的支持
+-->
+<style type='text/css'></style>
+<link rel='stylesheet' type='text/css' href=''>
+</html>
+

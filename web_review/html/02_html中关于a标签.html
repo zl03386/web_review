@@ -1,0 +1,46 @@
+<!doctype html>
+<!--
+a标签:表示链接
+href属性:链接url
+		 链接锚点
+name属性:设置锚点,可以用id属性代替
+target属性:在哪个窗口打开链接的地址
+		_top 跳出框架打开网页
+		_parent 在父窗口打开网页
+		_blank 在新窗口打开网页
+		_self 默认值，在同一框架中打开网页
+
+	
+-->
+<html>
+	<head>
+		<title>关于a标签</title>
+		<meta charset='utf-8'/>
+		<style type='text/css'>
+			a {
+				text-decoration:none;
+				color:red;
+				font-size:20px;
+			}
+		</style>
+	</head>
+	<body>
+		<a href='https://www.baidu.com' target='_blank' name='a1'>在新窗口打开百度首页</a>
+		<hr/>
+		<div style="width:300px;height:1000px;background:pink;"></div>
+		<a href='#a1'>跳转到mao锚点</a><br/>
+		<a href='#p'>跳转到p标签锚点</a>
+		
+		<hr/>
+	
+<!--a标签发邮件:(测试未通过)
+注意点 
+1、多个收件人，抄送和密件抄送人用分号;分割 
+2、收件地址和抄送地址用?号分割，其他用&号分割
+-->
+
+<a href="mailto:15210138913@163.com?cc="sipallan@163.com&bbc="564225061@qq.com&subject=这是一封邮件&body=我想你">发送邮件</a>
+
+<div style="width:300px;height:1000px;background:pink;"></div>
+<p id='p'>这是一个p标签锚点</p>
+</html>

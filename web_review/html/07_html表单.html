@@ -1,0 +1,158 @@
+<!doctype html>
+<!--html表单
+HTML 表单用于搜集不同类型的用户输入.
+
+form:定义表单 必须指定action属性(服务器地址)
+fieldset:对表单分组.legend:指定组名
+	
+
+
+
+
+-->
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<title></title>
+		<style type='text/css'>
+			* {
+				margin:0;
+				padding:0;
+			}
+			
+			html,body{
+				overflow:hidden;
+			}
+			body{
+				display: flex;
+				justify-content: center;
+				align-items:center;
+			}
+			
+			form{
+				width:400px;
+				height:517px;
+				border:5px solid pink;
+		
+				
+			}
+			
+			.fieldset1{
+				width:100px;
+				height:150px;
+				margin:10px;
+				float:left;
+			}
+			
+			.fieldset2{
+				width:210px;
+				height:140px;
+				margin:10px 10px 10px;
+				padding:5px;
+				float:left;
+			}
+			.fieldset2 > fieldset{
+				margin:0;
+				padding:0;
+				border:0;
+				margin:19px 0;
+			}
+			
+			.fieldset3{
+				width:324px;
+				height:54px;
+				margin:10px;
+				/*text-align:center;*/
+				padding:10px;
+			}
+			
+			.fieldset4{
+				width:324px;
+				height:54px;
+				margin:10px;
+				padding:10px;
+			}
+			
+			.fieldset5{
+				width:324px;
+				height:54px;
+				margin:10px;
+				padding:10px;
+			}
+			
+			.fieldset6{
+				padding:0px;
+				margin:10px;
+				text-align:center;
+			}
+			.fieldset6 >input{
+				font-size:25px;
+			}
+		</style>
+	</head>
+	<body>
+		<form action='./index.html' method='get'>
+			<fieldset class='fieldset1'>
+				<legend>贴照片处</legend>
+			</fieldset>
+			
+			
+			<fieldset class='fieldset2'>
+				<fieldset>
+					<label for='nameinput'>姓名</label>
+					<input type='text' name='personname' id='nameinput'/>
+				</fieldset>
+				<fieldset>
+					<label for='ageinput'>年龄</label>
+					<input type='text' name='ageinput' id='ageinput'/>
+				</fieldset>
+				
+				<fieldset id='sexselect'>
+					<label for='sexselect'>性别     </label>
+					<label for='male'>男</lable>
+					<input type='radio' name='sex' value='male' id='male' checked='checked'/>
+					<label for='female'>女</label>
+					<input type='radio' name='sex' value='female' id='female'/>
+				</fieldset>
+			</fieldset>
+			
+			
+			<fieldset class='fieldset3'>
+				<legend>最喜欢的食物</legend>
+				<input type='checkbox' name='farioutfood' id='farioutfood' value='apple'>
+				<label for='farioutfood'>苹果<label>
+				<input type='checkbox' name='farioutfood' id='farioutfood' value='banana'>
+				<label for='farioutfood'>香蕉<label>
+				<input type='checkbox' name='farioutfood' id='farioutfood' value='peer'>
+				<label for='farioutfood'>梨<label>
+				<input type='checkbox' name='farioutfood' id='farioutfood' value='oranage'>
+				<label for='farioutfood'>橘子<label>
+				<input type='checkbox' name='farioutfood' id='farioutfood' value='water'>
+				<label for='farioutfood'>水<label>
+			</fieldset>
+			
+			<fieldset class='fieldset4' >
+				<legend>请选择最喜欢的明星</legend>
+				<select name='star' id='mx'>
+					<optgroup label='男明星'>
+						<option value='ldh'>刘德华</option>
+						<option value='zwj'>张卫健</option>
+						<option value='cl'>成龙</option>
+					<optgroup label='女明星'>
+						<option value='a1'>a1</option>
+						<option value='a2'>a2</option>
+						<option value='a3'>a3</option>
+				</select>
+			</fieldset>
+			
+			<textarea class='fieldset5' name='tallself'>自我介绍</textarea>
+			
+			<hr/>
+			<div class='fieldset6'>
+				<input type='submit' value='提交'/>
+			</div>
+			
+
+		</form>
+	</body>
+</html>
